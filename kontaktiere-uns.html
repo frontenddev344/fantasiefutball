@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow" />
+    <title>Geschaftsbedingungen</title>
+    <link rel="icon" href="images/favicon1.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header class="header">
+        <!-- main header -->
+        <div class="navigation page-header">
+            <div class="container">
+                <div class="navigation-inner">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="sidenavs" id="mySidenavs">
+                            <span class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+                            <ul>
+                                <li><a href="/" >Startseite </a></li>
+                                <li><a href="spielanleitung">Spielanleitung</a></li>
+                                <li><a href="kontaktiere-uns" class="active">Kontaktiere uns</a></li>
+                                <li><a href="blogeintrage">Blogeintrage</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="toggle-bar">
+                            <span class="toggle_menu" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main header -->
+    </header>
+    <!-- Header section -->
+
+    <!--  -->
+    <section class="inner-bnr contact">
+        <div class="container">
+            <div class="bnr-text-inner">
+                <h2>Kontaktiere uns
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="methoden">
+        <div class="container">
+            <div class="method-inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="uns-content">
+                            <h5>Kontaktiere uns </h5>
+                            <p>Wir würden uns freuen, von Ihnen zu hören! Egal, ob Sie Fragen oder Kommentare haben oder
+                                Hilfe benötigen, unser kanadisches Sportteam ist für Sie da. Kontaktieren Sie uns über
+                                eine der folgenden Methoden:
+                            </p>
+                            <h5>Email </h5>
+                            <p> Für allgemeine Anfragen, Unterstützung oder Feedback senden Sie uns bitte eine E-Mail
+                                an:
+                                Support: <a href="mailto:info@lesportcanadien.com">info@lesportcanadien.com </a></p>
+                            <p>Kommentare: <a
+                                    href="mailto:feedback@lesportcanadien.com">feedback@lesportcanadien.com</a></p>
+                            <h5>Soziale Netzwerke
+                            </h5>
+                            <p>Verbinden Sie sich mit uns in den sozialen Medien, um die neuesten Updates, Neuigkeiten
+                                und Community-Diskussionen zu erhalten:
+                            </p>
+                            <p><a href="#">Facebook </a></p>
+                            <p><a href="#">Twitter </a></p>
+                            <p><a href="#">Instagram </a></p>
+                            <h5>Kontakt Formular
+                            </h5>
+                            <p>Sie können uns auch über das unten stehende Kontaktformular direkt von unserer Website
+                                aus eine Nachricht senden. Bitte geben Sie Ihren Namen, Ihre E-Mail-Adresse und eine
+                                kurze Beschreibung Ihrer Anfrage an. Wir werden so schnell wie möglich antworten.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-f">
+                            <h3>Kontaktiere uns</h3>
+                            <form id="contactForm" action="#">
+                                <div class="form-wrapper-p">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label>Vorname *</label>
+                                                <input type="text" id="firstName" name="name"  autocomplete="off">
+                                            </p>
+                                            <div id="nameError" class="error">Bitte geben Sie Ihren Vornamen ein</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label> Nachname  *</label>
+                                                <input type="text" id="lastName" name="last_name" autocomplete="off">
+                                            </p>
+                                            <div id="lastNameError" class="error">Bitte geben Sie ihren Nachnamen ein</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-wrapper-p">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label>  E-Mail *</label>
+                                                <input type="email" id="email" name="email"  autocomplete="off">
+                                            </p>
+                                            <div id="emailError" class="error">Bitte geben Sie ihre E-Mail-Adresse ein</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label> Handynummer *</label>
+                                                <input type="text" id="phoneNumber" name="number"
+                                                     autocomplete="off">
+                                            </p>
+                                            <div id="phoneNumberError" class="error">Bitte geben sie ihre Handynummer ein
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-wrapper-p">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                <label> Ihre Nachricht *</label>
+                                                <textarea id="message" name="message" cols="50" autocomplete="off"></textarea>
+                                            </p>
+                                            <div id="messageError" class="error">Bitte gib deine Nachricht ein</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-wrapper-p">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="submit">
+                                                <input type="submit" id="submitBtn" value="einreichen">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-heading">
+                            <h5>um Fantasiefutball</h5>
+                        </div>
+                        <div class="textwidget">
+                            <p>Machen Sie noch heute mit bei Fantasie Futball! Werde Coach</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-heading">
+                            <h5>Neueste Beitrage </h5>
+                        </div>
+                        <div class="text-widget">
+                            <div class="post-wrapper">
+                                <h5><a href="Ihr-ultimativer-leitfaden-für-den-einstieg">ultimativer Leitfaden</a></h5>
+                                <div class="clearfix">
+                                    <p> Oct 21, 2022</p>
+                                </div>
+                            </div>
+                            <div class="post-wrapper">
+                                <h5><a href="die-10-besten-spieler-dieser-saison">besten Spieler</a></h5>
+                                <div class="clearfix">
+                                    <p> Oct 22, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-heading">
+                            <h5>Schnelllink
+                            </h5>
+                        </div>
+                        <div class="text-widget">
+                            <ul>
+                                <li><a href="index" class="active">Startseite </a></li>
+                                <li><a href="spielanleitung">Spielanleitung</a></li>
+                                <li><a href="kontaktiere-uns">Kontaktiere uns</a></li>
+                                <li><a href="blogeintrage">Blogeintrage</a></li>
+                                <li><a href="datenschutzrichtlinie">Datenschutzrichtlinie</a></li>
+                                <li><a href="geschaftsbedingungen">Geschaftsbedingungen</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-heading">
+                            <h5>Folgen Sie uns </h5>
+                        </div>
+                        <div class="text-widget">
+                            <div class="footer-insta">
+                                <a href="#"><img src="images/1.jpg" alt="Image"></a>
+                                <a href="#"><img src="images/2.jpg" alt="Image"></a>
+                                <a href="#"><img src="images/3.jpg" alt="Image"></a>
+                                <a href="#"><img src="images/4.jpg" alt="Image"></a>
+                                <a href="#"><img src="images/5.jpg" alt="Image"></a>
+                                <a href="#"><img src="images/6.jpg" alt="Image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="Fantasiefutball">
+                                <p>© 2024 Fantasiefutball Alle Rechte vorbehalten</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="social-icon">
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/validation.js"></script>
+    <script>
+        const header = document.querySelector(".page-header");
+        const toggleClass = "is-sticky";
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 150) {
+                header.classList.add(toggleClass);
+            } else {
+                header.classList.remove(toggleClass);
+            }
+        });
+
+    </script>
+</body>
+
+<html>
